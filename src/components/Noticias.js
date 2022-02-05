@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import img1 from "../assets/images/img1.png";
 import img2 from "../assets/images/img2.png";
@@ -7,7 +7,12 @@ import img4 from "../assets/images/img4.png";
 import bar from "../assets/images/bar.png";
 
 const Noticias = () => {
-  const [imgList, setImgList] = useState([img1, img2, img3, img4]);
+  const [imgList, setImgList] = useState([]);
+
+  useEffect(() => {
+    setImgList([img1, img2, img3, img4]);
+  }, []);
+
   return (
     <main>
       <div className="noticias">
