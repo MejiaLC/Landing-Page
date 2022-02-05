@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <p className="subaru">
-        Subaru @ 2021 All rights reserved - Powered by <span>SolucionSoft</span>
+        Subaru @ 2021 All rights reserved - Powered by <span>Test</span>
       </p>
       <img src={Line} alt="line" className="lineFooter" />
       <p className="contactanos">
